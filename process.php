@@ -1,5 +1,5 @@
-<?php
-$duracion_cookie = 365 * 24 * 60 * 60;
+ <?php
+/* $duracion_cookie = 365 * 24 * 60 * 60;
 
 if (isset($_COOKIE["encuesta_navidad"])) {
     header("Location: ya_respondido.html");
@@ -20,5 +20,5 @@ if (isset($_COOKIE["encuesta_navidad"])) {
         header("Location: gracias.html");
         exit();
     }
-}
+} */
 ?>
