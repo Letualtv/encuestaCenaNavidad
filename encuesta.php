@@ -29,7 +29,7 @@
             </div>
             <div class="form-group form-floating">
                 <textarea class="form-control" id="intolerancias" name="intolerancias" rows="3" placeholder="Especifica si tienes alguna intolerancia alimenticia"></textarea>
-                <label for="intolerancias">Intolerancias alimenticias</label>
+                <label for="intolerancias">Intolerancias o preferencias alimentarias</label>
             </div>
             <div class="form-group form-floating">
                 <select class="form-select" id="confirmacion" name="confirmacion" required>

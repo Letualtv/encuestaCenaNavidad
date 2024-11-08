@@ -1,16 +1,15 @@
 <?php
 // config.php
 
-$host = 'dpg-csl01tl6l47c73bqnthg-a'; // Por ejemplo, "your-database.render.com"
-$port = '5432'; // Puerto de PostgreSQL
-$dbname = 'encuestaDB'; // Nombre de la base de datos que creaste
-$user = 'encuestadb_u310_user'; // Usuario de la base de datos
-$password = 'nZVyPQonpjnSo3B3tvI82tYT3TLoSd2W'; // Contraseña de la base de datos
+$servername = 'sql209.infinityfree.com'; // Por ejemplo, "your-database.render.com"
+$dbname = 'if0_37657658_database'; // Nombre de la base de datos que creaste
+$username = 'if0_37657658'; // Usuario de la base de datos
+$password = 'fpWaieO3JRjO5Q'; // Contraseña de la base de datos
 
-// Crear conexión
-$conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-if (!$conn) {
-    die("Error en la conexión a la base de datos.");
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
 }
 ?>
